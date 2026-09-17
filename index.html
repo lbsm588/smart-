@@ -305,7 +305,7 @@
         };
 
         const dynamicLinkDict = {
-            "https://kjgx668.blogspot.com": { zh: "立博数码", en: "TechShare Blog" },
+            "https://hao.5896689.xyz/": { zh: "立博数码", en: "TechShare Blog" },
             "https://hao.5896689.xyz/": { zh: "立博数码导航", en: "TechShare Nav" },
             "https://it-toutiao.blogspot.com": { zh: "IT头条博客", en: "IT Toutiao Blog" }
         };
@@ -740,7 +740,7 @@
 
         function loadFriendLinks() {
             const container = document.getElementById('friend-links-container'); let linksStr = localStorage.getItem('nav_friend_links'); let links = linksStr ? JSON.parse(linksStr) : []; container.innerHTML = '';
-            if(links.length === 0) { links = [ { name: "IT头条博客", url: "https://it-toutiao.blogspot.com" }, { name: "立博数码导航", url: "https://hao.5896689.xyz/" } ]; }
+            if(links.length === 0) { links = [ { name: "立博数码导航", url: "https://hao.5896689.xyz/" } ]; }
             links.forEach((item, index) => {
                 const displayName = getLocalizedLinkName(item.name, item.url);
                 container.innerHTML += `
